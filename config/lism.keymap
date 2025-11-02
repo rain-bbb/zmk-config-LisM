@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_KANA";
             #binding-cells = <0>;
-            bindings = <&kp INTERNATIONAL_2>, <&kp LANGUAGE_2>, <&sl 4>;
+            bindings = <&kp INTERNATIONAL_2>, <&kp LANGUAGE_2>, <&sl 1>;
         };
     };
 
@@ -58,10 +58,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q             &kp W   &kp E      &kp R           &kp T                                         &kp Y        &kp U           &kp I      &kp O    &kp P
-&kp A             &kp S   &kp D      &kp F           &kp G                                         &kp H        &kp J           &kp K      &kp L    &mt RIGHT_SHIFT SQT
-&mt LEFT_SHIFT Z  &kp X   &kp C      &kp V           &kp B                                         &kp N        &kp M           &kp COMMA  &kp DOT  &kp SLASH
-&lt 5 DELETE      &tog 1  &lt 1 TAB  &kp LS(LG(N4))  &lt 3 SPACE  &tapdance_kana    &kp BACKSPACE  &lt 3 ENTER  &kp LS(LG(N4))  &kp F7     &kp F10  &lt 5 F12
+&kp Q             &kp W         &kp E         &kp R           &kp T                                         &kp Y        &kp U           &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F           &kp G                                         &kp H        &kp J           &kp K      &kp L    &mt RIGHT_SHIFT SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V           &kp B                                         &kp N        &kp M           &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_WIN  &kp LS(LG(N4))  &lt 3 SPACE  &tapdance_kana    &kp BACKSPACE  &lt 3 ENTER  &kp LS(LG(N4))  &kp F7     &kp F10  &lt 5 F12
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -101,14 +101,16 @@
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
         };
 
-        layer_3 {
+        ARROW {
             display-name = "Mark Layer";
             bindings = <
-&kp LS(LG(N4))  &kp F4   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none                        &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR
-&emoji          &kp F5   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none                        &kp GRAVE  &kp UNDER        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp BACKSLASH
-&kp KP_NUMLOCK  &kp F11  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none                        &kp PIPE   &kp PERCENT      &kp CARET         &kp AMPERSAND      &kp ASTERISK
-&trans          &trans   &kp NUMBER_0          &trans                 &kp SPACE  &trans    &trans  &kp ENTER  &trans           &none             &none              &kp F12
+&kp AMPERSAND        &kp AT_SIGN       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp LS(INTERNATIONAL_3)                    &kp UNDERSCORE  &kp LC(KP_PLUS)  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp DOLLAR
+&kp MINUS            &kp LEFT_BRACKET  &kp EXCLAMATION    &kp QUESTION   &kp INTERNATIONAL_3                        &kp PG_UP       &kp LC(MINUS)    &kp UP_ARROW    &kp CARET             &trans
+&mt LEFT_SHIFT HASH  &kp PERCENT       &kp SQT            &kp SEMICOLON  &kp EQUAL                                  &kp PG_DN       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp LS(INTERNATIONAL_1)
+&trans               &trans            &kp NUMBER_0       &trans         &kp SPACE                &trans    &trans  &kp ENTER       &trans           &none           &none                 &trans
             >;
+
+            sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
         };
 
         layer_4 {
