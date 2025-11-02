@@ -21,7 +21,7 @@ layers:
   - K
   - L
   - {t: SQT, h: RIGHT SHIFT}
-  - Z
+  - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
