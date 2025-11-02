@@ -31,9 +31,9 @@ layers:
   - ','
   - .
   - /
-  - {t: DEL, h: Device Layer}
-  - {t: Mouse Layer, h: toggle}
-  - {t: TAB, h: Mouse Layer}
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT WIN
   - Sft+Gui+4
   - {t: SPACE, h: Number Layer}
   - '&tapdance_kana'
@@ -76,7 +76,7 @@ layers:
   - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Mouse Layer
@@ -130,36 +130,36 @@ layers:
   - {t: ▽, type: trans}
   - KP NUM
   Mark Layer:
-  - Sft+Gui+4
-  - F4
-  - (
-  - )
-  - ''
-  - '~'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '&emoji'
-  - F5
-  - '['
-  - ']'
-  - ''
-  - '`'
-  - _
-  - ''''
-  - '"'
-  - \
-  - KP NUMLOCK
-  - F11
-  - '{'
-  - '}'
-  - ''
-  - '|'
-  - '%'
-  - ^
   - '&'
+  - '@'
+  - ']'
+  - \
+  - Sft+INTERNATIONAL 3
+  - UNDERSCORE
+  - Ctl+KP PLUS
   - '*'
+  - (
+  - $
+  - '-'
+  - '['
+  - '!'
+  - QUESTION
+  - INTERNATIONAL 3
+  - PG UP
+  - Ctl+-
+  - UP ARROW
+  - ^
+  - {t: ▽, type: trans}
+  - {t: '#', h: LEFT SHIFT}
+  - '%'
+  - SQT
+  - ;
+  - '='
+  - PG DN
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - Sft+INTERNATIONAL 1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
@@ -171,7 +171,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  - F12
+  - {t: ▽, type: trans}
   Device Layer:
   - ''
   - ''
@@ -203,7 +203,7 @@ layers:
   - ''
   - ''
   - Reset
-  - {t: Boot, type: held}
+  - Boot
   - BT CLR ALL
   - ''
   - ''
@@ -214,7 +214,7 @@ layers:
   - ''
   - ''
   - ''
-  - Boot
+  - {t: Boot, type: held}
   Brank Layer:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -248,7 +248,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
