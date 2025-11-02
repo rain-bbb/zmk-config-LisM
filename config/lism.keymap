@@ -48,7 +48,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_KANA";
             #binding-cells = <0>;
-            bindings = <&kp INTERNATIONAL_2>, <&kp LANGUAGE_2>, <&sl 3>;
+            bindings = <&kp INTERNATIONAL_2>, <&kp LANGUAGE_2>, <&sl 4>;
         };
     };
 
@@ -61,7 +61,7 @@
 &kp Q             &kp W   &kp E      &kp R           &kp T                                         &kp Y        &kp U           &kp I      &kp O    &kp P
 &kp A             &kp S   &kp D      &kp F           &kp G                                         &kp H        &kp J           &kp K      &kp L    &mt RIGHT_SHIFT SQT
 &mt LEFT_SHIFT Z  &kp X   &kp C      &kp V           &kp B                                         &kp N        &kp M           &kp COMMA  &kp DOT  &kp SLASH
-&lt 4 DELETE      &tog 1  &lt 1 TAB  &kp LS(LG(N4))  &lt 2 SPACE  &tapdance_kana    &kp BACKSPACE  &lt 2 ENTER  &kp LS(LG(N4))  &kp F7     &kp F10  &lt 4 F12
+&lt 5 DELETE      &tog 1  &lt 1 TAB  &kp LS(LG(N4))  &lt 3 SPACE  &tapdance_kana    &kp BACKSPACE  &lt 3 ENTER  &kp LS(LG(N4))  &kp F7     &kp F10  &lt 5 F12
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -72,18 +72,30 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                   &trans  &kp F7  &kp F8  &kp F9  &kp F12
 &trans  &trans  &trans  &trans  &trans                   &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &mo 6                    &trans  &kp F1  &kp F2  &kp F3  &kp F10
+&trans  &trans  &trans  &trans  &mo 7                    &trans  &kp F1  &kp F2  &kp F3  &kp F10
 &trans  &trans  &trans  &trans  &trans  &mo 1    &trans  &trans  &trans  &trans  &trans  &kp ESCAPE
             >;
         };
 
-        NUM {
+        SCROLL {
             display-name = "Number Layer";
             bindings = <
 &kp LS(INTERNATIONAL_1)  &kp LEFT_ALT     &kp ASTERISK         &kp LEFT_PARENTHESIS  &mkp MCLK                    &kp TAB          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS
 &kp MINUS                &kp UNDERSCORE   &mt LSHIFT NUMBER_5  &mkp LCLK             &mkp RCLK                    &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &mt RIGHT_SHIFT SQT
 &mt LEFT_SHIFT KP_PLUS   &kp KP_MULTIPLY  &kp LEFT_BRACKET     &kp LC(V)             &kp LC(C)                    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
 &trans                   &trans           &trans               &trans                &trans     &trans    &trans  &kp LANG1        &trans           &trans           &trans           &kp KP_NUM
+            >;
+
+            sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        NUM {
+            display-name = "Number Layer";
+            bindings = <
+&kp LS(INTERNATIONAL_1)  &kp LEFT_ALT     &kp ASTERISK      &kp LEFT_PARENTHESIS  &mkp MCLK                    &kp TAB          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS
+&kp MINUS                &kp UNDERSCORE   &mo 2             &mkp LCLK             &mkp RCLK                    &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &mt RIGHT_SHIFT SQT
+&mt LEFT_SHIFT KP_PLUS   &kp KP_MULTIPLY  &kp LEFT_BRACKET  &kp LC(V)             &kp LC(C)                    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
+&trans                   &trans           &trans            &trans                &trans     &trans    &trans  &kp LANG1        &trans           &trans           &trans           &kp KP_NUM
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -109,7 +121,7 @@
             >;
         };
 
-        SCROLL {
+        layer6 {
             display-name = "Brank Layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
