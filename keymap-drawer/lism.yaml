@@ -99,7 +99,7 @@ layers:
   - KP MINUS
   - '-'
   - UNDERSCORE
-  - {t: '5', h: LSHIFT}
+  - Number Layer
   - '&mkp LCLK'
   - '&mkp RCLK'
   - KP SLASH
