@@ -38,7 +38,7 @@ layers:
   - {t: SPACE, h: Number Layer}
   - '&tapdance_kana'
   - BS
-  - {t: ENTER, h: Number Layer}
+  - {t: ENTER, h: Mark Layer}
   - Sft+Gui+4
   - F7
   - F10
@@ -167,7 +167,7 @@ layers:
   - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
+  - {t: ENTER, type: held}
   - {t: ▽, type: trans}
   - ''
   - ''
