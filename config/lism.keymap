@@ -64,7 +64,7 @@
 &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_WIN  &kp LS(LG(N4))  &lt 3 SPACE  &tapdance_kana    &kp BACKSPACE  &lt 4 ENTER  &kp LS(LG(N4))  &kp F7     &kp F10  &lt 5 F12
             >;
 
-            sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
         };
 
         FUNCTION {
@@ -80,10 +80,10 @@
         SCROLL {
             display-name = "Number Layer";
             bindings = <
-&kp LS(INTERNATIONAL_1)  &kp LEFT_ALT     &kp ASTERISK         &kp LEFT_PARENTHESIS  &mkp MCLK                    &kp TAB          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS
-&kp MINUS                &kp UNDERSCORE   &mt LSHIFT NUMBER_5  &mkp LCLK             &mkp RCLK                    &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &mt RIGHT_SHIFT SQT
-&mt LEFT_SHIFT KP_PLUS   &kp KP_MULTIPLY  &kp LEFT_BRACKET     &kp LC(V)             &kp LC(C)                    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
-&trans                   &trans           &trans               &trans                &trans     &trans    &trans  &kp LANG1        &trans           &trans           &trans           &kp KP_NUM
+&trans  &kp LEFT_ALT     &kp ASTERISK         &kp LEFT_PARENTHESIS  &mkp MCLK                    &kp TAB          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS
+&trans  &kp UNDERSCORE   &mt LSHIFT NUMBER_5  &mkp LCLK             &mkp RCLK                    &kp KP_SLASH     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &mt RIGHT_SHIFT SQT
+&trans  &kp KP_MULTIPLY  &kp LEFT_BRACKET     &kp LC(V)             &kp LC(C)                    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
+&trans  &trans           &trans               &trans                &trans     &trans    &trans  &kp LANG1        &trans           &trans           &trans           &kp KP_NUM
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -136,10 +136,10 @@
         layer_6 {
             display-name = "Brank Layer";
             bindings = <
-&trans       &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans       &trans      &trans  &trans  &trans                    &trans  &trans  &trans  &trans      &trans
+&trans       &trans      &trans  &trans  &trans                    &trans  &trans  &trans  &trans      &trans
+&trans       &trans      &trans  &trans  &trans                    &trans  &trans  &trans  &trans      &trans
+&bootloader  &sys_reset  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &sys_reset  &bootloader
             >;
         };
 
