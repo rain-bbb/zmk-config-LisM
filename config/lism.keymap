@@ -49,6 +49,8 @@
             label = "TAPDANCE_KANA";
             #binding-cells = <0>;
             bindings = <&kp INTERNATIONAL_2>, <&kp LANGUAGE_2>, <&sl 1>;
+
+            tapping-term-ms = <400>;
         };
     };
 
