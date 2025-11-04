@@ -68,7 +68,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Brank Layer
+  - Device Layer
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -169,11 +169,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ENTER, type: held}
   - {t: ▽, type: trans}
-  - ''
+  - {t: Brank Layer, h: toggle}
   - ''
   - {t: ▽, type: trans}
   Device Layer:
-  - ''
+  - BT CLR ALL
   - ''
   - ''
   - ''
@@ -193,7 +193,6 @@ layers:
   - ''
   - ''
   - ''
-  - Reset
   - ''
   - ''
   - ''
@@ -202,9 +201,10 @@ layers:
   - ''
   - ''
   - ''
-  - Reset
+  - ''
+  - ''
   - Boot
-  - BT CLR ALL
+  - Reset
   - ''
   - ''
   - ''
@@ -213,7 +213,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Reset
   - {t: Boot, type: held}
   Brank Layer:
   - {t: ▽, type: trans}
@@ -240,7 +240,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
