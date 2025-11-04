@@ -72,7 +72,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                   &trans  &kp F7  &kp F8  &kp F9  &kp F12
 &trans  &trans  &trans  &trans  &trans                   &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &mo 7                    &trans  &kp F1  &kp F2  &kp F3  &kp F10
+&trans  &trans  &trans  &trans  &mo 5                    &trans  &kp F1  &kp F2  &kp F3  &kp F10
 &trans  &trans  &trans  &trans  &trans  &mo 1    &trans  &trans  &trans  &trans  &trans  &kp ESCAPE
             >;
         };
@@ -107,30 +107,32 @@
 &kp AMPERSAND        &kp AT_SIGN       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp LS(INTERNATIONAL_3)                    &kp UNDERSCORE  &kp LC(KP_PLUS)  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp DOLLAR
 &kp MINUS            &kp LEFT_BRACKET  &kp EXCLAMATION    &kp QUESTION   &kp INTERNATIONAL_3                        &kp PG_UP       &kp LC(MINUS)    &kp UP_ARROW    &kp CARET             &trans
 &mt LEFT_SHIFT HASH  &kp PERCENT       &kp SQT            &kp SEMICOLON  &kp EQUAL                                  &kp PG_DN       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp LS(INTERNATIONAL_1)
-&trans               &trans            &kp NUMBER_0       &trans         &kp SPACE                &trans    &trans  &kp ENTER       &trans           &none           &none                 &trans
+&trans               &trans            &kp NUMBER_0       &trans         &kp SPACE                &trans    &trans  &kp ENTER       &trans           &tog 6          &none                 &trans
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
         };
 
-        layer_4 {
+        Bluetooth {
             display-name = "Device Layer";
             bindings = <
-&none        &none           &none  &none  &bt BT_CLR                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&none        &none           &none  &none  &none                       &none         &none         &none         &none         &none
-&sys_reset   &none           &none  &none  &none                       &none         &none         &none         &none         &sys_reset
-&bootloader  &bt BT_CLR_ALL  &none  &none  &none       &none    &none  &none         &none         &none         &none         &bootloader
+&bt BT_CLR_ALL  &none       &none  &none  &bt BT_CLR                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none           &none       &none  &none  &none                       &none         &none         &none         &none         &none
+&none           &none       &none  &none  &none                       &none         &none         &none         &none         &none
+&bootloader     &sys_reset  &none  &none  &none       &none    &none  &none         &none         &none         &sys_reset    &bootloader
             >;
         };
 
-        layer6 {
+        MOUSE {
             display-name = "Brank Layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans     &kp LS(LC(TAB))  &kp F5  &kp LC(TAB)  &trans
+&trans  &trans  &trans  &trans  &trans                    &mkp MCLK  &mkp LCLK        &mo 2   &mkp RCLK    &trans
+&trans  &trans  &trans  &trans  &trans                    &trans     &trans           &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans           &tog 6  &trans       &trans
             >;
+
+            sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
         };
 
         layer_6 {
